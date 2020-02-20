@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset='utf-8' />
+      <title>🏫Top 500 Global Institutions with Coronavirus Related Publications🏫</title>
+      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
+      <link href='css/styles.css' rel='stylesheet' />
+  </head>
+  <body>
+    <!-- the sidebar is fixed width and will contain a title, some text, and buttons -->
+    <div id='sidebar'>
+    <h3>🏫Coronavirus-related Researchers Map🏫</h3>
+
+    <p>This this the map showing the top 500 global institutions with coronavirus related publications.</p>
+
+    <p>📍Click a marker to see number of researchers and number of coronavirus related publications.</p>
+
+    <hr/>
+
+    <p>👆Click the buttons below to fly to the following continent.</p>
+
+    <br/>
+    <!-- Buttons for flying the map -->
+    <button class='flyto-button' id="Africa">✈️ Africa</button>
+    <br/>
+
+    <button class='flyto-button' id="America">✈️ America</button>
+    <br/>
+
+    <button class='flyto-button' id="Antarctica">✈️ Antarctica</button>
+    <br/>
+
+    <button class='flyto-button' id="Asia">🗽 Asia</button>
+    <br/>
+
+    <button class='flyto-button' id="Australia">🗽 Australia</button>
+    <br/>
+
+    <button class='flyto-button' id="Europe">🗽 Europe</button>
+
+
+    </div>
+
+
+    <!-- this is the map container, which will hold the mapboxGL map -->
+    <div id='map-container'></div>
+
+    <!-- Load mapboxGL, jQuery, then our local javascript files -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src='js/data.js'></script>
+    <script src='js/scripts.js'></script>
+
+  </body>
+</html>
