@@ -47,7 +47,7 @@ studentData.forEach(function(studentEntry) {
 $('#Africa').on('click', function() {
   map.flyTo({
     center: [21.445313,-1.450040],
-    zoom: 2
+    zoom: 3
   })
 })
 
@@ -92,6 +92,8 @@ $('#aorld').on('click', function() {
     zoom: 1
   })
 })
+
+
 var ElementStacks = new Class({
     Implements: [Options],
 
