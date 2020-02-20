@@ -2,17 +2,25 @@
 html {
   font-family: 'verdana', sans-serif;
 }
+/*top bar*/
+.topnav {
+  overflow: display;
+  width:auto;
+  background-color: #0a99c3;
+  text-align: center;
+  height: 40px;
 
+}
 /* get rid of the browser's default margin and padding around the body */
 body {
   margin: 0;
-  padding: 0;
+  padding:0;
 }
 
 /* absolute position the map container as full screen, leaving 300 pixels on the left */
 #map-container {
   position: absolute;
-  top: 0;
+  top: 40px;
   bottom: 0;
   right: 0;
   left: 300px;
@@ -45,11 +53,15 @@ button:hover {
 #sidebar {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 40px;
   bottom: 0;
   width: 300px;
   background-color: #0a99c3;
   color: #FFF;
   padding: 25px;
   box-sizing: border-box;
+}
+
+
+
 }

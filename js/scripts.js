@@ -36,7 +36,7 @@ studentData.forEach(function(studentEntry) {
   new mapboxgl.Marker()
     .setLngLat([studentEntry.Longitude, studentEntry.Latitude])
     .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-     .setHTML(`Institution: ${studentEntry.InstitutionName}
+    .setHTML(`Institution: ${studentEntry.InstitutionName}
       <br>
       ${studentEntry.NumberofResearchers} researchers published ${studentEntry.ArticlespublishedbytheResearchers} coronavirus related publications!`))
     .addTo(map);
