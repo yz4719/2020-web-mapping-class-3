@@ -34,9 +34,9 @@ map.addControl(new mapboxgl.NavigationControl());
 studentData.forEach(function(studentEntry) {
   // for each object in the studentData, add a marker to the map with a popup
   new mapboxgl.Marker()
-    .setLngLat([studentEntry.longitude, studentEntry.latitude])
+    .setLngLat([studentEntry.Longitude, studentEntry.Latitude])
     .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-     .setHTML(`${studentEntry.name} thinks ${studentEntry.pizza_place} is the best pizza in the world!`))
+     .setHTML(`${studentEntry.NumberofResearchers} thinks ${studentEntry.ArticlespublishedbytheResearchers} is the best pizza in the world!`))
     .addTo(map);
 })
 
