@@ -4,7 +4,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibW16enl5aGgiLCJhIjoiY2s2dTl6OGNsMDduejNkcXAwY
 
 // we want to return to this point and zoom level after the user interacts
 // with the map, so store them in variables
-var initialCenterPoint = [121.583, 31.14875]
+var initialCenterPoint = [123.398438,35.764343]
 var initialZoom = 5
 
 
@@ -22,12 +22,12 @@ var map = new mapboxgl.Map(initOptions);
 // add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
 
-// make a single marker in central park
- new mapboxgl.Marker()
-   .setLngLat([-73.974087,40.770718])
-   .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-    .setHTML('I am in Central Park'))
-   .addTo(map);
+// // make a single marker in central park
+//  new mapboxgl.Marker()
+//    .setLngLat([-73.974087,40.770718])
+//    .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+//     .setHTML('I am in Central Park'))
+//    .addTo(map);
 
 
 // iterate over each object in studentData
@@ -36,7 +36,8 @@ studentData.forEach(function(studentEntry) {
   new mapboxgl.Marker()
     .setLngLat([studentEntry.Longitude, studentEntry.Latitude])
     .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-     .setHTML(`${studentEntry.NumberofResearchers} thinks ${studentEntry.ArticlespublishedbytheResearchers} is the best pizza in the world!`))
+     .setHTML(`Institution: ${studentEntry.InstitutionName} \n
+      ${studentEntry.NumberofResearchers} researchers published ${studentEntry.ArticlespublishedbytheResearchers} coronavirus related publications!`))
     .addTo(map);
 })
 
@@ -44,33 +45,43 @@ studentData.forEach(function(studentEntry) {
 
 $('#Africa').on('click', function() {
   map.flyTo({
-    center: [112.556005, 37.818758],
-    zoom: initialZoom
+    center: [21.445313,-1.450040],
+    zoom: 4
   })
 })
 
-$('#michigan').on('click', function() {
+$('#America').on('click', function() {
 
-  var michiganLngLat = [-83.10538, 42.50448]
+  var americaLngLat = [-80.859375,-6.577303]
 
   map.flyTo({
-    center: michiganLngLat,
-    zoom: initialZoom
+    center: americaLngLat,
+    zoom: 3
   })
 })
 
-$('#colombia').on('click', function() {
-  var colombiaLngLat = [-73.997208, 0.721615]
+$('#Asia').on('click', function() {
+  var asiaLngLat = [100.546875,32.657876]
 
   map.flyTo({
-    center: colombiaLngLat,
-    zoom: initialZoom
+    center: asiaLngLat,
+    zoom: 4
+  })
+})
+$('#Europe').on('click', function() {
+  var euLngLat = [18.457031,52.776186]
+
+  map.flyTo({
+    center: euLngLat,
+    zoom: 4
   })
 })
 
-$('#nyc').on('click', function() {
+$('#Australia').on('click', function() {
+  var ausLngLat = [141.767578,-27.722436]
+
   map.flyTo({
-    center: initialCenterPoint,
-    zoom: initialZoom
+    center: ausLngLat,
+    zoom: 4
   })
 })
