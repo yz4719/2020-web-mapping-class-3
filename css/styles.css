@@ -17,6 +17,8 @@ html {
 body {
   margin: 0;
   padding:0;
+  bottom: 0;
+
 }
 
 /* absolute position the map container as full screen, leaving 300 pixels on the left */
