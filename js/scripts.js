@@ -86,9 +86,7 @@ $('#Australia').on('click', function() {
     zoom: 4
   })
 })
-$('#World').on('click', function() {
-  var ausLngLat = [141.767578,-27.722436]
-
+$('#aorld').on('click', function() {
   map.flyTo({
     center: initialCenterPoint,
     zoom: 2
