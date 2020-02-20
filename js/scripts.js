@@ -62,7 +62,7 @@ $('#America').on('click', function() {
 })
 
 $('#Asia').on('click', function() {
-  var asiaLngLat = [122.431641,32.768800]
+  var asiaLngLat = [84.431641,32.768800]
 
   map.flyTo({
     center: asiaLngLat,
