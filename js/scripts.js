@@ -4,8 +4,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibW16enl5aGgiLCJhIjoiY2s2dTl6OGNsMDduejNkcXAwY
 
 // we want to return to this point and zoom level after the user interacts
 // with the map, so store them in variables
-var initialCenterPoint = [123.398438,35.764343]
-var initialZoom = 5
+var initialCenterPoint = [-80.859375,-6.577303]
+var initialZoom = 2
 
 
 // create an object to hold the initialization options for a mapboxGL map
@@ -83,5 +83,13 @@ $('#Australia').on('click', function() {
   map.flyTo({
     center: ausLngLat,
     zoom: 4
+  })
+})
+$('#World').on('click', function() {
+  var ausLngLat = [141.767578,-27.722436]
+
+  map.flyTo({
+    center: initialCenterPoint,
+    zoom: 2
   })
 })
