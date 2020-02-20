@@ -4,8 +4,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibW16enl5aGgiLCJhIjoiY2s2dTl6OGNsMDduejNkcXAwY
 
 // we want to return to this point and zoom level after the user interacts
 // with the map, so store them in variables
-var initialCenterPoint = [-80.859375,-6.577303]
-var initialZoom = 2
+var initialCenterPoint = [0.000000,0.000000]
+var initialZoom = 1
 
 
 // create an object to hold the initialization options for a mapboxGL map
@@ -47,17 +47,17 @@ studentData.forEach(function(studentEntry) {
 $('#Africa').on('click', function() {
   map.flyTo({
     center: [21.445313,-1.450040],
-    zoom: 4
+    zoom: 2
   })
 })
 
 $('#America').on('click', function() {
 
-  var americaLngLat = [-80.859375,-6.577303]
+  var americaLngLat = [-85.429688,26.980829]
 
   map.flyTo({
     center: americaLngLat,
-    zoom: 3
+    zoom: 2
   })
 })
 
@@ -66,7 +66,7 @@ $('#Asia').on('click', function() {
 
   map.flyTo({
     center: asiaLngLat,
-    zoom: 4
+    zoom: 2
   })
 })
 $('#Europe').on('click', function() {
@@ -74,7 +74,7 @@ $('#Europe').on('click', function() {
 
   map.flyTo({
     center: euLngLat,
-    zoom: 4
+    zoom: 3
   })
 })
 
@@ -83,12 +83,12 @@ $('#Australia').on('click', function() {
 
   map.flyTo({
     center: ausLngLat,
-    zoom: 4
+    zoom: 2
   })
 })
 $('#aorld').on('click', function() {
   map.flyTo({
     center: initialCenterPoint,
-    zoom: 2
+    zoom: 1
   })
 })
