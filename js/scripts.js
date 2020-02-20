@@ -1,17 +1,17 @@
 // this is my mapboxGL token
 // the base style includes data provided by mapbox, this links the requests to my account
-mapboxgl.accessToken = 'pk.eyJ1IjoiY3dob25nLXFyaSIsImEiOiJjazZncWRkZGowb3kyM25vZXkwbms2cW0xIn0.lbwola6y7YDdaKLMdjif1g';
+mapboxgl.accessToken = 'pk.eyJ1IjoibW16enl5aGgiLCJhIjoiY2s2dTl6OGNsMDduejNkcXAwYzFmMm5mYSJ9.CbLRIkFjQIPksjZ-wwKWNg';
 
 // we want to return to this point and zoom level after the user interacts
 // with the map, so store them in variables
-var initialCenterPoint = [-73.987, 40.735]
-var initialZoom = 10.67
+var initialCenterPoint = [121.583, 31.14875]
+var initialZoom = 5
 
 
 // create an object to hold the initialization options for a mapboxGL map
 var initOptions = {
   container: 'map-container', // put the map in this container
-  style: 'mapbox://styles/mapbox/dark-v10', // use this basemap
+  style: 'mapbox://styles/mapbox/light', // use this basemap
   center: initialCenterPoint, // initial view center
   zoom: initialZoom, // initial view zoom level (0-18)
 }
@@ -42,7 +42,7 @@ studentData.forEach(function(studentEntry) {
 
 // event listeners for the fly to buttons
 
-$('#china').on('click', function() {
+$('#Africa').on('click', function() {
   map.flyTo({
     center: [112.556005, 37.818758],
     zoom: initialZoom
