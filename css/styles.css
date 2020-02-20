@@ -59,7 +59,7 @@ button:hover {
 /* sidebar is fixed with and positioned to the left */
 #sidebar {
   /* background: url(https://www.newsner.in/uploads/images/Woman_suspected_to_be_affected_by_Coronavirus.jpg); */
-  opacity: 50%;
+  /* opacity: 50%; */
   position: absolute;
   left: 0;
   top: 40px;
