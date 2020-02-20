@@ -11,7 +11,7 @@ var initialZoom = 5
 // create an object to hold the initialization options for a mapboxGL map
 var initOptions = {
   container: 'map-container', // put the map in this container
-  style: 'mapbox://styles/mapbox/light', // use this basemap
+  style: 'mapbox://styles/mmzzyyhh/ck6uajyf61w431jqhn56amsvg', // use this basemap
   center: initialCenterPoint, // initial view center
   zoom: initialZoom, // initial view zoom level (0-18)
 }
