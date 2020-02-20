@@ -6,7 +6,9 @@ html {
 .topnav {
   overflow: display;
   width:auto;
-  background-color: #0a99c3;
+  /* background: url(https://www.newsner.in/uploads/images/Woman_suspected_to_be_affected_by_Coronavirus.jpg); */
+  opacity: inherit;
+  background-color: #E6F7FF;
   text-align: center;
   height: 40px;
 
@@ -54,22 +56,32 @@ button:hover {
 
 /* sidebar is fixed with and positioned to the left */
 #sidebar {
+  /* background: url(https://www.newsner.in/uploads/images/Woman_suspected_to_be_affected_by_Coronavirus.jpg); */
+  opacity: 50%;
   position: absolute;
   left: 0;
   top: 40px;
   bottom: 0;
   width: 300px;
-  background-color: #0a99c3;
+  height: auto;
   color: #FFF;
   padding: 25px;
+  background-color: #E6F7FF;
+
   box-sizing: border-box;
 }
 
+.word{
+  color: black;
+  text-shadow: ture;
+}
+
 #wrapper {
-    position: relative;
-    height: 320px;
+    position:relative;
+    height: 300px;
     width: 280px;
     margin: 15px auto;
+
 }
 
 img {
