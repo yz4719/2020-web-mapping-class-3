@@ -92,3 +92,6 @@ $('#aorld').on('click', function() {
     zoom: 1
   })
 })
+$('.sidebarBtn').click(function(){
+  $('.sidebar').toggleClass('active');
+});
